@@ -2,7 +2,8 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 /* header section  */
@@ -28,15 +29,13 @@ nav a {
     color: #fdfdfd;
     padding: 10px;
     border-left: 1px solid #f48222;
-    width: 100px;
-
 }
 
 nav a:hover {
     text-decoration: none;
     color: #333333;
     background-color: #f48222;
-    border-left: 2px solid #333333;
+    border-left: 1px solid #333333;
 }
 
 header h1 {
@@ -52,35 +51,24 @@ header spam {
 /* page content */
 section {
     display: flex;
-}
-
-.main {
-    align-content: center;
-    background-color: #fdfdfd;
-    flex: 3;
-    display: flex;
     flex-direction: column;
 }
 
-aside {
-    background-color: #e5e5e5;
-    flex-direction: column;
-    flex: 1;
-}
-
-.article {
+article {
     display: flex;
-    align-content: center;
+    align-content: space-around;
     border-bottom: 2px solid #f48222;
     margin: 20px;
 }
 
-.square {
-    background-color: #dddddd;
-    height: 150px;
-    width: 150px;
-    margin: 20px;
+.col-text {
+    flex: 1;
 }
+
+.col-code {
+    flex: 1;
+}
+
 
 /* footer section */
 footer {
@@ -94,3 +82,4 @@ footer {
     height: 50px;
     color: #fdfdfd;
 }
+
