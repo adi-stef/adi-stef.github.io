@@ -56,24 +56,27 @@ section {
 
 article {
     display: flex;
-    align-content: space-around;
+    align-content: center;
     border-bottom: 2px solid #f48222;
     margin: 20px;
 }
 
-.col-text, .col-code {
-    flex: 1;
-    margin-bottom: 15px;
+.square {
+    background-color: #dddddd;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
 }
 
 /* footer section */
 footer {
+    display: flex;
+    justify-content: center;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #333333;
-    height: 40px;
+    height: 50px;
     color: #fdfdfd;
 }
-
