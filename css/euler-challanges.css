@@ -61,14 +61,10 @@ article {
     margin: 20px;
 }
 
-.col-text {
+.col-text, .col-code {
     flex: 1;
+    padding: 5px;
 }
-
-.col-code {
-    flex: 1;
-}
-
 
 /* footer section */
 footer {
