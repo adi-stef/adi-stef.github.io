@@ -1,5 +1,4 @@
 body {
-    /* background-image:url(img/bg2.jpg); */
     background-color: darkgray;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +21,6 @@ body {
     flex: 1;
     height: 150px;
 }
-
 
 textarea {
     font-size: 10px;
