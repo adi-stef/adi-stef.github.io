@@ -61,10 +61,6 @@ img {
     justify-content: space-around;
 }
 
-.button {
-    background-color: #f7f7f7;
-}
-
 button {
     background-color: #007bff;
     border-radius: 10px;
@@ -103,5 +99,23 @@ footer {
     left: 0;
     bottom: 0;  
     text-align: center;
-    height: 50px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    header li {
+        margin: 10px;
+    }    
 }
