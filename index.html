@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>balcony sensor data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        button {
+            margin: 5px;
+            
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Stefan Bukos <spam>my work</spam></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="euler-challanges.html">Algorithms challenges</a>
-            <a href="contact.html">Contact</a>
-            <a href="./flexbox/project1/project1.html" target="_blank">Flexbox templates</a>
-        </nav>
-    </header>
-
-    <section>
-        <article>
-            <div class="square"></div>
-            <h5>Flexbox template model</h5>
-            <p></p>
-        </article>
-        <article>
-            <div class="square"></div>
-        </article>
-        <article>
-            <div class="square"></div>
-        </article>
-    </section>
-
-    <footer>
-        <h5>Footer stuff goes here</h5>
-    </footer>
-
+   <button id='getalldata'>GET all data</button> <br>
+   <button id='getdata'>GET where A matches B</button>
+   <input type="text" id="a" placeholder="A">
+   <span>matches</span>
+   <input type="text" id="b" placeholder="B"><br>
+  
+   <button id='cleardata'>DELETE all data</button> <br>
+   <button id='clearrecord'>DELETE this record</button>
+   <input type="text" id="record" placeholder="record UUID">
+   <hr>
+   <div id='here'></div>
+<script src="script.js"></script>        
 </body>
 </html>
